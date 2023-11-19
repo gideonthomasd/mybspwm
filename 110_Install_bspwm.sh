@@ -27,3 +27,6 @@ cd ..
 cd mononoki
 cp -r * ~/.local/share/fonts
 cd ..
+
+cp Youth and Beauty - OTF.otf ~/.local/share/fonts
+cp Youth and Beauty - TTF.ttf ~/.local/share/fonts
