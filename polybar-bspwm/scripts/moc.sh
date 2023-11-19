@@ -12,17 +12,17 @@ state=$state"f"
 if [ $state == "PLAYf" ]; then
 	icon="  "
 	#icon=" "
-	this=$(mocp -Q %file 2>/dev/null | sed 's/\//\n/g' | sed '$!d' | sed 's/ /_/g'| awk '$1>0 {print substr($1,1,13)}')
+	this=$(mocp -Q %file 2>/dev/null | sed 's/\//\n/g' | sed '$!d' | sed 's/ /_/g'| awk '$1>0 {print substr($1,1,17)}')
 	this=$this"..."
 elif [ $state == "PAUSEf" ]; then
 	#icon=" "
 	icon="  "
-	this=$(mocp -Q %file 2>/dev/null| sed 's/\//\n/g' | sed '$!d' | sed 's/ /_/g'| awk '$1>0 {print substr($1,1,13)}')
+	this=$(mocp -Q %file 2>/dev/null| sed 's/\//\n/g' | sed '$!d' | sed 's/ /_/g'| awk '$1>0 {print substr($1,1,17)}')
 	this=$this"..."
 else
 	icon=""
-	this="[STOP]"
+	this="{STOP}"
 fi
 
 #this=$this | sed '$!d'
-echo $icon$this" "
+echo " "$icon$this
