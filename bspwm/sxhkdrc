@@ -43,8 +43,8 @@ super + x
 	~/dotfiles/scripts/powermenu.sh
 	#~/log.sh
 
-F2
-	jgmenu_run
+#F2
+	#jgmenu_run
 
 F9
     brave-browser
